@@ -1,0 +1,256 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-Class(1-5)</title>
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-dark: #996515;
+            --gold-light: #F9E27D;
+            --bg-dark: #0a0a0a;
+            --text-gold: #FFD700;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-gold);
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(145deg, #1a1a1a, #000);
+            border-bottom: 3px solid var(--gold-primary);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Grid System for Classes */
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+            border: 2px solid var(--gold-primary);
+            padding: 30px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            text-decoration: none;
+            color: var(--gold-light);
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: var(--gold-primary);
+            color: #000;
+            box-shadow: 0 0 25px var(--gold-primary);
+        }
+
+        /* Content Sections */
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .chapter-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .chapter-item {
+            background: #1a1a1a;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid var(--gold-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .chapter-item a {
+            color: var(--gold-light);
+            text-decoration: none;
+        }
+
+        .btn-back {
+            margin-top: 30px;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background: var(--gold-primary);
+            color: #000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mr.Moj777 Academy</h1>
+    <p>Class 1 to 5 English</p>
+</header>
+
+<div class="container">
+    
+    <div id="main-menu" class="section" style="display: block;">
+        <h2>Select your class</h2>
+        <div class="class-grid">
+            <div class="card" onclick="showClass('class1')">Class 1</div>
+            <div class="card" onclick="showClass('class2')">Class 2</div>
+            <div class="card" onclick="showClass('class3')">Class 3</div>
+            <div class="card" onclick="showClass('class4')">Class 4</div>
+            <div class="card" onclick="showClass('class5')">Class 5</div>
+        </div>
+    </div>
+
+    <div id="class1" class="section">
+        <h2>Class 1 : Index</h2>
+        <div class="chapter-list">
+            <div class="chapter-item"><a href="1c1.pdf">Lesson 1: My House</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c2.pdf">Lesson 2: My School Day</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c3.pdf">Lesson 3: A Cat in Trouble</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c4.pdf">Lesson 4: The Old House</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c5.pdf">Lesson 5: From Here to There</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c6.pdf">Lesson 6: A Happy Child</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c7.pdf">Lesson 7: Mrs. Ant and Mr. Rat</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c8.pdf">Lesson 8: Up, Down, All Around</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c9.pdf">Lesson 9: Baba's Lassi</a> <span>→</span></div>
+            <div class="chapter-item"><a href="1c10.pdf">Lesson 10: The Magic Door</a> <span>→</span></div>
+        </div>
+        <button class="btn-back" onclick="showMain()">Go to Home Page</button>
+    </div>
+
+    <div id="class2" class="section">
+        <h2>Class 2 : Index</h2>
+        <div class="chapter-list">
+            <div class="chapter-item"><a href="2c1.pdf">Lesson 1: Ten Fingers</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c2.pdf">Lesson 2: School Day and Holiday</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c3.pdf">Lesson 3: The Rain</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c4.pdf">Lesson 4: The Little Red Hen</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c5.pdf">Lesson 5: The Tall Trees</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c6.pdf">Lesson 6: Radha's Deepawali</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c7.pdf">Lesson 7: The Wind and the Sun</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c8.pdf">Lesson 8: The Lion and The Mouse</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c9.pdf">Lesson 9: The Busy Bee</a> <span>→</span></div>
+            <div class="chapter-item"><a href="2c10.pdf">Lesson 10: Why the Sky is Far Away</a> <span>→</span></div>
+        </div>
+        <button class="btn-back" onclick="showMain()">Go to Home Page</button>
+    </div>
+
+    <div id="class3" class="section">
+          <h2>Class 3 : Index</h2>
+        <div class="chapter-list">
+            <div class="chapter-item"><a href="3c1.pdf">Lesson 1: The Wheels that Move us</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c2.pdf">Lesson 2: My School</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c3.pdf">Lesson 3: My Place</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c4.pdf">Lesson 4: I am so Happy</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c5.pdf">Lesson 5: Finding Spider</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c6.pdf">Lesson 6: The Amazing People in My Life</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c7.pdf">Lesson 7: The Desert that Grew Small</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c8.pdf">Lesson 8: This is How We Farm</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c9.pdf">Lesson 9: Sarita Finds a Little Rainy Friend</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c10.pdf">Lesson 10: Sweet Ride of Rajasthan</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c11.pdf">Lesson 11: Festivals of Bharat</a> <span>→</span></div>
+            <div class="chapter-item"><a href="3c12.pdf">Lesson 12: Wake up, Manisha</a> <span>→</span></div>
+        </div>
+        <button class="btn-back" onclick="showMain()">Go to Home Page</button>
+    </div>
+    
+    <div id="class4" class="section">
+          <h2>Class 4 : Index</h2>
+        <div class="chapter-list">
+            <div class="chapter-item"><a href="4c1.pdf">Lesson 1: Stronger Together</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c2.pdf">Lesson 2: Let's Go Home!</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c3.pdf">Lesson 3: Let's Play Football</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c4.pdf">Lesson 4: The Giant and the Colours</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c5.pdf">Lesson 5: The Girl Who Could Not Stop Laughing</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c6.pdf">Lesson 6: A Visit a Sanctuary</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c7.pdf">Lesson 7: Our Joint Family in Rajasthan</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c8.pdf">Lesson 8: King Big Moustache</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c9.pdf">Lesson 9: Veer Durga Das</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c10.pdf">Lesson 10: Little Dreamers</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c11.pdf">Lesson 11: In Today's News</a> <span>→</span></div>
+            <div class="chapter-item"><a href="4c12.pdf">Lesson 12: Nani's Tales</a> <span>→</span></div>
+        </div>
+        <button class="btn-back" onclick="showMain()">Go to Home Page</button>
+    </div>
+
+    <div id="class5" class="section">
+          <h2>Class 5 : Index</h2>
+        <div class="chapter-list">
+            <div class="chapter-item"><a href="5c1.pdf">Lesson 1: I Found out Myself</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c2.pdf">Lesson 2: Kheer</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c3.pdf">Lesson 3: The Emperor's New Crown</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c4.pdf">Lesson 4: Join hands to Right the Wrong</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c5.pdf">Lesson 5: Technology in Today's Time</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c6.pdf">Lesson 6: Teacher's Day</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c7.pdf">Lesson 7: The Flower's Wish</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c8.pdf">Lesson 8: A River's Autobiography</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c9.pdf">Lesson 9: The Colours of Bharat</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c10.pdf">Lesson 10: The Map</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c11.pdf">Lesson 11: Then and Now</a> <span>→</span></div>
+            <div class="chapter-item"><a href="5c12.pdf">Lesson 12: History of Bharat's Moon Mission</a> <span>→</span></div>
+        </div>
+        <button class="btn-back" onclick="showMain()">Go to Home Page</button>
+    </div>
+
+</div>
+
+<script>
+    function showClass(classId) {
+        // सभी सेक्शन्स को छुपाएं
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+        // चुनी गई कक्षा दिखाएं
+        document.getElementById(classId).style.display = 'block';
+    }
+
+    function showMain() {
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById('main-menu').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
